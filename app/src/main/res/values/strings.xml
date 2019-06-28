@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="title_rules">Rules</string>
+    <string name="hint_prefix">Hint: </string>
+</resources>
