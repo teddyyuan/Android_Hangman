@@ -16,7 +16,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_game);
 
         //Initialize game
         hangmanModel = new HangmanModel();
@@ -27,7 +27,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         guessView = (TextView) findViewById(R.id.guessedWords);
         actualWord = (TextView) findViewById(R.id.chosenWord);
 
-        hintView.append(categoryOfTheGame);
+        hintView.append(" " + categoryOfTheGame);
         actualWord.append(wordOfTheGame);
 
         /*

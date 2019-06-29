@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,13 +10,10 @@
         android:layout_width="166dp"
         android:layout_height="103dp"
         android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="67dp"
         android:layout_marginEnd="228dp"
-        android:layout_marginRight="228dp"
         android:gravity="center"
         android:shadowColor="#335869"
-        android:text="Hangman"
+        android:text="@string/game_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#D8000000"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
@@ -29,15 +25,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="171dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hangman" />
 
     <Button
@@ -46,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Play"
+        android:text="@string/play_button"
         app:layout_constraintBottom_toTopOf="@id/Rules"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -60,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="168dp"
-        android:text="Rules"
+        android:text="@string/rules_title"
         app:layout_constraintBottom_toBottomOf="@id/imageView"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintLeft_toLeftOf="parent"

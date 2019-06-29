@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Project1</string>
-    <string name="title_rules">Rules</string>
+    <string name="app_name">Project1 - Hangman</string>
+    <string name="game_name">Hangman</string>
+    <string name="play_button">Play</string>
+
+    <string name="guess_prefix">Guessed Words: </string>
     <string name="hint_prefix">Hint: </string>
+
+    <string name="rules_title">Rules</string>
+    <string name="rules_body">The rules of hangman are simple: given a category, select letters to guess the word. \nEvery correct guess will get you closer to winning while every wrong guess will create the hangman. \nWhen the hangman is completed, you lose!</string>
 </resources>

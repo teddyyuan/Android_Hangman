@@ -11,12 +11,14 @@
         android:id="@+id/chosenCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hint: " />
+        android:gravity="center"
+        android:text="@string/hint_prefix" />
     <TextView
         android:id="@+id/guessedWords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guessed words: " />
+        android:gravity="center"
+        android:text="@string/guess_prefix" />
     <TextView
         android:id="@+id/chosenWord"
         android:layout_width="match_parent"
