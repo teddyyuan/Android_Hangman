@@ -34,6 +34,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             Teddy - Logic for creating dynamic textviews will go here. Make sure on game start that the textViews have underscores: _ while view is empty. They must match the length of the wordOfTheGame.
             Create logic for replacing textView with the correct letter of the String if it is guessed correctly. The function is below.
          */
+        
+        TextView wordView = (TextView)findViewById(R.id.word);
+        for (int i = 0; i < wordOfTheGame.length(); i++) {
+            wordView.append("_ ");
+        }
 
     }
 
