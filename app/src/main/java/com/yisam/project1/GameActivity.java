@@ -34,6 +34,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             Teddy - Logic for creating dynamic textviews will go here. Make sure on game start that the textViews have underscores: _ while view is empty. They must match the length of the wordOfTheGame.
             Create logic for replacing textView with the correct letter of the String if it is guessed correctly. The function is below.
          */
+        LinearLayout lLayout = (LinearLayout) findViewById(R.id.word);
+        for (int i = 0; i < wordOfTheGame.length(); i++) {
+            TextView tv = new TextView(this);
+            tv.setText("_ ");
+            tv.setId(i + 1);
+            lLayout.addView(tv); 
+        }
 
     }
 
@@ -69,6 +76,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             Teddy - Logic for changing textview after you create it dynamically: https://stackoverflow.com/questions/12494554/textview-style-after-adding-dynamically
             Basically you will need to reference the textview with a dynamic id you give it to change it to display the correct character
          */
+        int ID = 1;
+        LinearLayout layout = (LinearLayout)findViewById(R.id.word);
+        TextView letter = (TextView) findViewById(ID);
+        letter.setText("A");
+        layout.addView(letter);
 
     }
     public void guessWrong(String c) {
