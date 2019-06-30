@@ -36,12 +36,13 @@
         android:textSize="36sp" />
 
     <TextView
+        android:id="@+id/word"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:gravity="center"
-        android:text="TextViews w/Letters - Teddy"
-        android:textSize="36sp" />
+        android:text=""
+        android:textSize="36sp"/>
 
     <TextView
         android:layout_width="match_parent"
